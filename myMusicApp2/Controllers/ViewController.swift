@@ -9,6 +9,9 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    // 서치 컨트롤러 생성
+    let searchController = UISearchController()
+    
     @IBOutlet weak var musicTableView: UITableView!
     
     // 네트워크 매니저 (싱글톤)

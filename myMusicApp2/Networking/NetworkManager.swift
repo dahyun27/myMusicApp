@@ -28,9 +28,9 @@ final class NetworkManager {
     
     // 네트워킹 요청하는 함수 (음악 데이터 가져오기)
     func fetchMusic(searchTerm: String, completionHandler: @escaping NetworkCompletion) {
-        let URLString = "\(MusicApi.requestUrl)\(MusicApi.mediaParam)&term=\(searchTerm)"
+        let urlString = "\(MusicApi.requestUrl)\(MusicApi.mediaParam)&term=\(searchTerm)"
         
-        performRequest(with: URLString) { result in
+        performRequest(with: urlString) { result in
             completionHandler(result)
         }
     }
@@ -39,7 +39,7 @@ final class NetworkManager {
     
     
     // 실제 Request하는 함수
-    func performRequest(with urlString: String, completionHandler: @escaping NetworkCompletion) {
+    private func performRequest(with urlString: String, completionHandler: @escaping NetworkCompletion) {
 
         // URL구조체 만들기
         guard let url = URL(string: urlString) else { return }
@@ -90,6 +90,8 @@ final class NetworkManager {
             return musicData.results
         // fail
         } catch {
+            print("📦 서버 응답 데이터:")
+            print(String(data: musicData, encoding: .utf8) ?? "JSON 디코딩 불가")
             print(error.localizedDescription)
             return nil
         }

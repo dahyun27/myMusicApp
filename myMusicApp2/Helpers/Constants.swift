@@ -11,12 +11,12 @@ import UIKit
 
 public enum MusicApi {
     static let requestUrl = "https://itunes.apple.com/search?"
-    static let mediaParam = "media=music "
+    static let mediaParam = "media=music"
 }
 
 
 public struct Cell {
-    static let musicCellIdentifier = "MusicCell"
+    static let musicCellIdentifier = "MyMusicCell"
     static let musicCollectionViewCellIdentifier = "MusicCollectionViewCell"
     private  init() {}
 }
