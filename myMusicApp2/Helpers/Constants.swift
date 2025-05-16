@@ -20,3 +20,10 @@ public struct Cell {
     static let musicCollectionViewCellIdentifier = "MusicCollectionViewCell"
     private  init() {}
 }
+
+
+public struct CVCell{
+    static let spacingWidth: CGFloat = 1
+    static let cellColums: CGFloat = 3
+    private init() {}
+}
