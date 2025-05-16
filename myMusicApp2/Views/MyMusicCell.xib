@@ -54,12 +54,11 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="zsa-MX-ukY" firstAttribute="bottom" secondItem="eeW-TL-UJI" secondAttribute="bottom" id="Bdo-Tc-ANY"/>
-                    <constraint firstItem="zsa-MX-ukY" firstAttribute="top" secondItem="eeW-TL-UJI" secondAttribute="top" id="E1k-M1-UjV"/>
                     <constraint firstAttribute="trailing" secondItem="zsa-MX-ukY" secondAttribute="trailing" constant="20" id="Mqx-fJ-rMO"/>
-                    <constraint firstItem="zsa-MX-ukY" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QBX-LU-Th7"/>
                     <constraint firstItem="eeW-TL-UJI" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="aoA-tK-YsN"/>
                     <constraint firstItem="zsa-MX-ukY" firstAttribute="leading" secondItem="eeW-TL-UJI" secondAttribute="trailing" constant="20" id="fOu-u6-JBD"/>
+                    <constraint firstAttribute="bottom" secondItem="zsa-MX-ukY" secondAttribute="bottom" constant="10" id="hCg-sy-5ii"/>
+                    <constraint firstItem="zsa-MX-ukY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="sQm-V3-hQz"/>
                     <constraint firstItem="eeW-TL-UJI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="xLM-JZ-A3f"/>
                 </constraints>
             </tableViewCellContentView>

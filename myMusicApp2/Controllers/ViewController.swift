@@ -9,7 +9,6 @@ import UIKit
 
 final class ViewController: UIViewController {
     
-    
     // 서치 컨트롤러 생성 => 네비게이션 아이템에 할당
 //    let searchController = UISearchController()
     
@@ -97,13 +96,14 @@ extension ViewController: UITableViewDataSource {
 
 
 extension ViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 120
-//    }
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }
+//    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return UITableView.automaticDimension
+//    }
+//}
 
 
 //MARK: - 단순 서치바
